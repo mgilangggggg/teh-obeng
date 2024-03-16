@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengulangan: While</title>
+</head>
+
+<body>
+    <script>
+        alert('Lacak status penerbangan');
+        var ulang = true;
+        var NoPesawat = 1;
+        while (NoPesawat <= 2) {
+            alert('Ke mana kamu mau pergi?');
+            var from = prompt('From? ');
+            var to = prompt('To? ');
+            alert('🛫 Penerbangan dengan nomor ' + NoPesawat + ' ' + from + ' - ' + to + 'beroperasi dengan baik.');
+            NoPesawat++;
+
+            ulang = confirm('Lacak status penerbangan lain?');
+        }
+        alert('Terima Kasih...');
+    </script>
+</body>
+
+</html>
