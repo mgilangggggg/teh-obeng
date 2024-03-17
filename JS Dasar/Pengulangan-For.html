@@ -4,20 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pengulangan: While</title>
+    <title>Pengulangan: For</title>
 </head>
 
 <body>
     <script>
-        var ulang = true
         var jmlPesawat = 5
+        var pesawatBeroperasi = 3
         var noPesawat = 3456
         var percobaan = 1
 
         alert('Lacak status penerbangan')
         alert('Anda memiliki ' + jmlPesawat + 'x Percobaan')
 
-        while (percobaan <= jmlPesawat) {
+        while (percobaan <= pesawatBeroperasi) {
             alert('Ke mana kamu mau pergi?')
             var from = prompt('From? ')
             var to = prompt('To? ')
@@ -26,6 +26,11 @@
 
             alert('Anda telah melakukan percobaan sebanyak ' + percobaan++ + 'x')
         }
+
+        for (noPesawat = pesawatBeroperasi + 1; noPesawat <= jmlPesawat; noPesawat++) {
+            alert('Pesawat no. ' + noPesawat + ' tidak beroperasi')
+        }
+
         alert('Maaf anda telah melewati maksimal ' + jmlPesawat + 'x' +
             ' batas percobaan "Reload kembali untuk melakukan percobaan"')
         alert('Terima Kasih...')

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan: IF ELSE menggunakan FOR</title>
+</head>
+
+<body>
+    <script>
+        var jmlPesawat = 5
+        var pesawatBeroperasi = 3
+        var percobaan = 1
+
+        for (noPesawat = 3456; percobaan <= jmlPesawat;) {
+            if (percobaan <= pesawatBeroperasi) {
+                alert('Ke mana kamu mau pergi?');
+                var from = prompt('From? ');
+                var to = prompt('To? ');
+                alert('🛫 Penerbangan dengan nomor ' + noPesawat + ' ' + from + ' - ' + to + ' beroperasi.');
+                noPesawat++;
+            }
+
+            if (percobaan >= 4) {
+                alert('Pesawat no. ' + noPesawat++ + ' tidak beroperasi');
+            }
+            alert('Anda telah melakukan percobaan sebanyak ' + percobaan++ + 'x');
+        }
+        alert('Maaf anda telah melewati maksimal ' + jmlPesawat + 'x' +
+            ' batas percobaan "Reload kembali untuk melakukan percobaan"');
+        alert('Terima Kasih...');
+    </script>
+</body>
+
+</html>
