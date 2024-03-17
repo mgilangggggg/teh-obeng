@@ -9,19 +9,25 @@
 
 <body>
     <script>
-        alert('Lacak status penerbangan');
-        var ulang = true;
-        var NoPesawat = 1;
-        while (NoPesawat <= 2) {
-            alert('Ke mana kamu mau pergi?');
-            var from = prompt('From? ');
-            var to = prompt('To? ');
-            alert('🛫 Penerbangan dengan nomor ' + NoPesawat + ' ' + from + ' - ' + to + 'beroperasi dengan baik.');
-            NoPesawat++;
+        alert('Lacak status penerbangan')
 
-            ulang = confirm('Lacak status penerbangan lain?');
+        var ulang = true
+        var jmlPesawat = 5
+        var noPesawat = 1
+
+        alert('Anda hanya memiliki ' + jmlPesawat + 'x Percobaan')
+
+        while (noPesawat <= jmlPesawat) {
+            alert('Ke mana kamu mau pergi?')
+            var from = prompt('From? ')
+            var to = prompt('To? ')
+            alert('🛫 Penerbangan dengan nomor ' + noPesawat + ' ' + from + ' - ' + to + ' beroperasi.')
+            noPesawat++
+
+            ulang = confirm('Lacak status penerbangan lain?')
         }
-        alert('Terima Kasih...');
+        alert('Anda telah menggunakan ' + jmlPesawat + 'x percobaan')
+        alert('Terima Kasih...')
     </script>
 </body>
 
